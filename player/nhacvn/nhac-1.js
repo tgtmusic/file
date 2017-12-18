@@ -1,0 +1,8 @@
+/*!
+ * Nhac plugin for JW7 v1.0.4 support Expand, noVIP, Login, setAuto
+ * Copyright 2016 Nhac.vn, Vega Corp
+ * http://nhac.vn
+ */
+(function(h){h().registerPlugin("nhac","6.0",function(b,e,h){function k(a){var b=document.createElement("li");b.className="jw-text jw-option jw-item-4 jw-reset";b.innerHTML=a;b.onclick=function(){f=!0;"function"===typeof onPlayerLoginVip&&onPlayerLoginVip()};a=d[d.length-1];a.parentNode.insertBefore(b,a.nextSibling)}var c,g,d,l=!0,f=!1;b.onReady(function(a){g=b.getContainer();c=document.createElement("div");c.className="jw-icon jw-icon-inline jw-button-color jw-reset jw-icon-expand";c.onclick=function(){800>=
+b.getWidth()?c.className="jw-icon jw-icon-inline jw-button-color jw-reset jw-icon-expand-off":c.className="jw-icon jw-icon-inline jw-button-color jw-reset jw-icon-expand";"function"===typeof onPlayerExpandCollapse&&onPlayerExpandCollapse()};a=g.getElementsByClassName("jw-icon-fullscreen")[0];a.parentNode.insertBefore(c,a)});b.onMeta(function(a){1<b.getQualityLevels().length&&(a=b.getQualityLevels()[0].label,0<b.getCurrentQuality()&&(0==b.getPosition()||l)&&("Auto"==a||"T\u1ef1 \u0111\u1ed9ng"==a)&&
+b.setCurrentQuality(0),l=!1)});b.on("levelsChanged",function(a){f&&(f=!1,b.setCurrentQuality(1))});void 0!==e.showVIP&&!1!==e.showVIP&&(b.on("firstFrame",function(a){d=g.getElementsByClassName("jw-icon-hd")[0].getElementsByClassName("jw-option");1<d.length&&(a=d[1],"720p"!=a.innerHTML&&"1080p"!=a.innerHTML&&k("720p (Login)"),2==e.showVIP&&"1080p"!=a.innerHTML&&k("1080p (VIP)"))}),this.resize=function(a,b){})})})(jwplayer);

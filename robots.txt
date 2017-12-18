@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: /sitemap/song-1.xml
+Sitemap: /sitemap/video-1.xml
+Sitemap: /sitemap/album-1.xml

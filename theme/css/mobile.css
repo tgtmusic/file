@@ -1,0 +1,104 @@
+/******** For mobile device ********/
+/******************************/
+/*---- Responsive base screen witdh ------- */
+/* width - 30 */
+/* Tablet Devices Resizing */
+@media all and (max-width: 1024px) and  (min-width: 970px){
+	.wrapper-page {
+		width: 100%;
+	}
+	.wrap-body ,.container{width:100%;}
+	.wrap-content {
+		width: 65%;
+		float: none;
+	}
+	.wrap-sidebar {
+		width: 30%;
+		float: none;
+	}
+}
+@media all and  (max-width: 970px){
+	.wrapper-page {
+		width: 100%;
+	}
+	.wrap-body ,.container{width:100%;}
+	.wrap-content {
+		width: 65%;
+		float: none;
+	}
+	.wrap-sidebar {
+		width: 100%;
+		float: none;
+	}
+	.widget{float: none;}
+	#tab_click_top_song,#tab_click_top_video,#tab_click_top_album{width: 65%;}
+}
+@media all and  (max-width: 870px)  and (min-width:750px){
+	.wrapper-page {
+		width: 100%;
+	}
+	.wrap-body ,.container{width:100%;}
+	.wrap-content {
+		width: 100%;
+		float: none;
+	}
+	.wrap-sidebar {
+		width: 100%;
+		float: none;
+	}
+	.widget{float: none;}
+	#tab_click_top_song,#tab_click_top_video,#tab_click_top_album{width: 65%;}
+}
+@media all and (max-width:750px) and (min-width:680px){
+	.wrapper-page {
+		width: 100%;
+	}
+	.wrap-body ,.container{width:100%;}
+	.wrap-content {
+		width: 100%;
+		float: none;
+	}
+	.wrap-sidebar {
+		width: 100%;
+		float: none;
+	}
+	.widget{float: none;}
+	#tab_click_top_song,#tab_click_top_video,#tab_click_top_album{width: 65%;}
+
+}
+@media all and (min-width:320px) and (max-width: 480px) {
+	.wrapper-page {
+		width: 100%;
+	}
+	.wrap-body ,.container{width:100%;}
+	.wrap-content {
+		width: 100%;
+		float: none;
+	}
+	.wrap-sidebar {
+		width: 100%;
+		float: none;
+	}
+	.widget{float: none;}
+	#tab_click_top_song,#tab_click_top_video,#tab_click_top_album{width: 65%;}
+
+}
+@media all and (max-width: 380px) {
+
+	.wrapper-page {
+		width: 100%;
+	}
+	.wrap-body ,.container,.top_banner{width:100%;}
+	.wrap-content {
+		width: 100%;
+		float: none;
+	}
+	.wrap-sidebar {
+		width: 100%;
+		float: none;
+	}
+	.widget{float: none;}
+	#tab_click_top_song,#tab_click_top_video,#tab_click_top_album{width: 50%;}
+
+}
+/*---- end Responsive base screen witdh ------- */

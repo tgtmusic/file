@@ -1,0 +1,103 @@
+/* Boxy site login v.v... */
+/* Show and Hide Comments */
+.hide-content{display:none;margin:0;padding:0;}
+.hide-contentalbum{display:none;margin:0;padding:0;}
+/* End Show and Hide*/
+.pic img {width:100%;height:100%;}
+.none1 {
+	display: none;	
+}
+.boxy-wrapper { position: absolute; }
+.boxy-wrapper.fixed { position: fixed; }
+.boxy-modal-blackout { position: absolute; background-color: #000000; left: 0; top: 0; }
+.boxy-wrapper { empty-cells: show; padding: 5px; background: rgba(255,255,255,0.3)}
+.boxy-wrapper .title-bar {
+	padding: 8px 10px 0 10px;
+	-moz-border-radius: 4px 4px 0px 0px;
+	-webkit-border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0px 0px;
+
+	height: 25px;
+}
+.boxy-wrapper .title-bar.dragging { cursor: move; }
+.boxy-wrapper .title-bar h2 {font-size: 1.2em; display: inline-block; color: #666666; line-height: 1; margin: 0;font-weight: normal; }
+.boxy-wrapper .title-bar .close { 
+
+  	background-position: -98px -33px;
+    display: block;
+    float: right;
+    height: 22px;
+    margin: 0;
+    width: 22px;
+}
+.boxy-wrapper .title-bar .close:hover { color: #cfcfcf;}	
+.boxy-inner { background-color: white; padding: 0 }
+.boxy-content { padding: 15px; }
+.boxy-wrapper .question { width: 350px; min-height: 20px; }
+.boxy-wrapper .answers { text-align: right; }
+/* end */
+.box-play-video{
+    height:370px;
+}
+.page-play-video .wrap-sidebar{
+    margin-top: -385px;
+}
+.with-playlist .mv-playlist {
+    width: 320px;
+    height: 366px;				
+}
+.playlist-videos-container.box-scroll {
+    max-height: 210px;
+}
+.expand .with-playlist .mv-playlist {
+    max-height: 404px;
+}
+.playlist-videos-list li{
+    padding: 10px 0;
+}
+.fn-buy-vip {
+    position: absolute!important;
+    width: 100px!important;
+    padding: 8px 20px!important;
+    border-radius: 4px;                
+    left: 50%!important;
+    margin-left: -50px!important;       
+    top: 50px!important;
+    background: #ae4ad9!important;        
+    text-shadow: none; 
+}        
+.fn-buy-vip:hover {
+    background: #851bb3!important;
+}
+#zplayerjs-wrapper .zm-icon {
+    background-image: url(../images/zplayer.png)!important;
+}
+#playlistItems {
+    max-height: 300px!important;
+overflow:auto;
+}
+.container-zalo-share {
+    cursor: pointer; 
+    width: 100%;
+    height: 40px;
+    background: #0f8ee0;
+    border-radius: 5px;
+    text-align: center; 
+    padding-top: 5px; 
+    margin-top: 20px!important;
+}
+.container-zalo-share span{
+    font-size: 14px; 
+    font-weight: bold; 
+    color: #FFF; display: 
+        inline-block; position: 
+        relative; top: 1px;
+}
+.badge-edit{
+position:absolute;
+top:59%;
+left:84%;
+display:block;
+width:25px;
+height:25px}
+.page-alert { margin-top: 32px;}
