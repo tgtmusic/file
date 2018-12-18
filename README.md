@@ -1,7 +1,5 @@
 
-Share Code Nhạc TGT Skin Zing MP3 Đầu Năm 2017
-
-Demo: 
+Code Nhạc TGT Skin Zing MP3 Đầu Năm 2017
 
 Cấu hình data : includes/configurations.php
 
