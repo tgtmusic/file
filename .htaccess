@@ -1,0 +1,125 @@
+RewriteEngine On
+Options +FollowSymlinks
+RewriteRule ^index.html$ index.php [L]
+RewriteRule ^nghe-bai-hat-(.*)\.(.*).html$ index.php [L]
+RewriteRule ^xem-video-(.*)\.(.*).html$ index.php [L]
+RewriteRule ^nghe-album-(.*)\.(.*).html$ index.php [L]
+RewriteRule ^the-loai-(.*)\.(.*).html$ index.php [L]
+RewriteRule ^video/the-loai-(.*)\.(.*).html$ index.php [L]
+RewriteRule ^upload.html$ upload_user.php [L]
+RewriteRule ^upload-1.html$ upload_user_file.php [L]
+RewriteRule ^slider.html$ slider.php [L]
+
+RewriteRule ^bai-hat/(.*)/(.*).html$ play_song.php?name=$1&id=$2 [L]
+RewriteRule ^video/(.*)/(.*).html$ play_video.php?name=$1&id=$2 [L]
+RewriteRule ^album/(.*)/(.*).html(.*)$ nghe_album.php?name=$1&id=$2&st=$3 [L]
+RewriteRule ^album/(.*)/(.*).html$ nghe_album.php?name=$1&id=$2 [L]
+RewriteRule ^the-loai-bai-hat/(.*)/(.*)-([0-9]+).html(.*)$ the_loai.php?name=$1&id=$2&p=$3 [L]
+RewriteRule ^the-loai-bai-hat/(.*)/(.*).html(.*)$ the_loai.php?name=$1&id=$2&p=$3 [L]
+
+RewriteRule ^the-loai-album/(.*)/(.*)-([0-9]+).html(.*)$ album_cat.php?name=$1&id=$2&p=$3 [L]
+RewriteRule ^the-loai-album/(.*)/(.*).html(.*)$ album_cat.php?name=$1&id=$2&p=$3 [L]
+
+RewriteRule ^the-loai-video/(.*)/(.*)-([0-9]+).html(.*)$ cat_video.php?name=$1&id=$2&p=$3 [L]
+RewriteRule ^the-loai-video/(.*)/(.*).html(.*)$ cat_video.php?name=$1&id=$2&p=$3 [L]
+
+RewriteRule ^the-loai-news/(.*)/(.*)-([0-9]+).html(.*)$ news_cat.php?name=$1&id=$2&p=$3 [L]
+RewriteRule ^the-loai-news/(.*)/(.*).html(.*)$ news_cat.php?name=$1&id=$2&p=$3 [L]
+
+RewriteRule ^the-loai-nghe-si/(.*)/(.*)-([0-9]+).html(.*)$ singer_cat.php?name=$1&id=$2&p=$3 [L]
+RewriteRule ^the-loai-nghe-si/(.*)/(.*).html(.*)$ singer_cat.php?name=$1&id=$2&p=$3 [L]
+
+RewriteRule ^chu-de/(.*)/(.*)-([0-9]+).html(.*)$ topic_cat.php?name=$1&id=$2&p=$3&type=$4 [L]
+RewriteRule ^chu-de/(.*)/(.*).html(.*)$ topic_cat.php?name=$1&id=$2&type=$3 [L]
+RewriteRule ^chu-de$ chu_de.php [L]
+
+RewriteRule ^the-loai-album.html$ cat.php?act=the-loai-album [L]
+RewriteRule ^the-loai-video.html$ cat.php?act=the-loai-video [L]
+RewriteRule ^the-loai-nhac.html$ cat.php?act=the-loai-nhac [L]
+RewriteRule ^the-loai-nghe-si$ cat.php?act=the-loai-nghe-si [L]
+RewriteRule ^chu-de$ chu_de.php [L]
+
+RewriteRule ^bang-xep-hang/index.html$ bang-xep-hang.php [L]
+
+RewriteRule ^bang-xep-hang/bai-hat-(.*)/(.*).html(.*)(.*)$ bxh-song.php?name=$1&id=$2&w=$3 [L]
+RewriteRule ^bang-xep-hang/album-(.*)/(.*).html(.*)$ bxh-album.php?name=$1&id=$2&w=$3 [L]
+RewriteRule ^bang-xep-hang/video-(.*)/(.*).html(.*)$ bxh-video.php?name=$1&id=$2&w=$3 [L]
+RewriteRule ^bang-xep-hang/(.*)/(.*).html(.*)$ bxh-social.php?name=$1&id=$2&w=$3 [L]
+
+RewriteRule ^top100/(.*)/(.*).html(.*)$ top100.php?name=$1&id=$2 [L]
+RewriteRule ^tim-kiem.html$ tim_kiem.php [L]
+RewriteRule ^bai-hat.html$ tim_kiem_bai_hat.php [L]
+RewriteRule ^video.html$ tim_kiem_video.php [L]
+RewriteRule ^playlist.html$ tim_kiem_playlist.php [L]
+
+RewriteRule ^404.html$ 404.php [L]
+RewriteRule ^tim-kiem/404.html$ 404.php [L]
+RewriteRule ^the-loai/404.html$ 404.php [L]
+
+RewriteRule ^mymusic/upload(.*)$ user.php?act=upload&p=$1 [L]
+RewriteRule ^mymusic/upload-video(.*)$ user.php?act=upload-video&p=$1 [L]
+RewriteRule ^mymusic/myplaylist-edit/(.*)$ user.php?act=myplaylist-edit&id=$1 [L]
+RewriteRule ^mymusic/myplaylist(.*)$ user.php?act=myplaylist&p=$1 [L]
+RewriteRule ^mymusic/favorites-song(.*)$ user.php?act=favorites-song&p=$1 [L]
+RewriteRule ^mymusic/favorites-video(.*)$ user.php?act=favorites-video&p=$1 [L]
+RewriteRule ^mymusic/favorites-playlist(.*)$ user.php?act=favorites-playlist&p=$1 [L]
+RewriteRule ^mymusic/following-artist(.*)$ user.php?act=following-artist&p=$1 [L]
+RewriteRule ^mymusic/(.*)$ user.php?act=$1 [L]
+
+RewriteRule ^mymusic2/(.*)/(.*)$ edit-playlist.php?act=$1&id=$2 [L]
+
+RewriteRule ^album/(.*)/(.*).html$ album.php?act=$1&p=$2 [L]
+RewriteRule ^album/(.*).html$ album.php?act=$1 [L]
+
+RewriteRule ^nghe-si/(.*)/(.*)$ singer.php?name=$1&act=$2 [L]
+RewriteRule ^nghe-si/(.*)$ singer.php?name=$1 [L]
+
+RewriteRule ^video/Viet-Nam.html$ the-loai-video/Viet-Nam/EZEFZOA.html [L]
+RewriteRule ^video/Chau-A.html$ the-loai-video/Chau-A/EZEFZOC.html [L]
+RewriteRule ^video/Au-My.html$ the-loai-video/Au-My/EZEFZOB.html [L]
+
+RewriteRule ^bai-hat/Viet-Nam.html$ the-loai-bai-hat/Viet-Nam/EZEFZOA.html [L]
+RewriteRule ^bai-hat/Chau-A.html$ the-loai-bai-hat/Chau-A/EZEFZOC.html [L]
+RewriteRule ^bai-hat/Au-My.html$ the-loai-bai-hat/Au-My/EZEFZOB.html [L]
+
+RewriteRule ^xml/2/(.*).xml$ xml/xml.php?id=$1 [L]
+RewriteRule ^xml/3/(.*).xml$ xml/xml-album.php?id=$1 [L]
+RewriteRule ^xml/5/playlist.xml$ xml/xml-playlist.php [L]
+RewriteRule ^xml/6/(.*).xml$ xml/bxh.php?name=$1 [L]
+
+RewriteRule ^xml/share-1/(.*).xml$ xml/xml-song-share.php?id=$1 [L]
+RewriteRule ^xml/share-2/(.*).xml$ xml/xml-album-share.php?id=$1 [L]
+
+RewriteRule ^thanh-vien/thoat.html$ user/thoat.php [L]
+RewriteRule ^thanh-vien/(.*)/(.*).html$ home_user.php?act=p&user=$1&id=$2 [L]
+RewriteRule ^thanh-vien/(.*).html$ home_user.php?act=$1 [L]
+
+RewriteRule ^u/(.*)/(.*)$ page_user.php?name=$1&act=$2 [L]
+RewriteRule ^u/(.*)$ page_user.php?name=$1
+RewriteRule ^tin-tuc/(.*)/(.*).html$ doc_tin.php?id=$2&name=$1 [L]
+RewriteRule ^tin-tuc(.*)$ list_news.php?p=$1 [L]
+
+RewriteRule ^embed/song/(.*)$ share/share_song.php?id=$1 [L]
+RewriteRule ^embed/song/normal/(.*)$ share/share_song.php?id=$1 [L]
+
+RewriteRule ^embed/mv/(.*)$ share/share_video.php?id=$1 [L]
+RewriteRule ^embed/mv/normal/(.*)$ share/share_video.php?id=$1 [L]
+
+RewriteRule ^embed/album/(.*)$ share/share_album.php?id=$1 [L]
+RewriteRule ^embed/album/normal/(.*)$ share/share_album.php?id=$1 [L]
+
+RewriteRule ^embed/mv-topic/(.*)$ share/embed_topic_video.php?id=$1 [L]
+
+RewriteRule ^embed/bang-xep-hang/(.*)/(.*).html$ share/embed_bxh_mp3.php?name=$1 [L]
+RewriteRule ^embedv/bang-xep-hang/(.*)/(.*).html$ share/embed_bxh_video.php?name=$1 [L]
+RewriteRule ^rss/(.*).rss$ rss.php?type=$1 [L]
+RewriteRule ^sitemap.xml$ sitemap.php?type=$1 [L]
+RewriteRule ^rss.rss$ rss.php?type=$1 [L]
+
+RewriteRule ^stream/data/z/(.*).mp3$ get_link/zing.php?link=$1.html [L]
+RewriteRule ^stream/data/nct/(.*).mp3$ get_link/nct.php?link=http://www.nhaccuatui.com/nghe?M=$1 [L]
+RewriteRule ^stream/data/nct2/(.*).mp3$ get_link/nct.php?link=http://www.nhaccuatui.com/bai-hat/$1.html [L]
+RewriteRule ^stream/data/nctv/(.*).mp4$ get_link/nct_video.php?link=http://www.nhaccuatui.com/mv/$1.html [L]
+RewriteRule ^stream/data/nctv/(.*).mp4$ get_link/nct_video.php?link=http://www.nhaccuatui.com/video/$1.html [L]
+RewriteRule ^stream/data/zv/(.*).mp4$ get_link/zing-channel.php?link=http://mp3.zing.vn/video-clip/$1.html [L]
+RewriteRule ^stream/data/zip/(.*)/(.*).flv$ get_link/zippyshare.php?url=http://www$1.zippyshare.com/v/$2/file.html [L]
